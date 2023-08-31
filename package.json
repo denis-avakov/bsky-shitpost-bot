@@ -6,7 +6,7 @@
     "pnpm": "8.7.0"
   },
   "scripts": {
-    "dev": "tsx watch ./src/index.ts",
+    "dev": "node --watch --loader=tsx ./src/index.ts",
     "start": "tsx ./src/index.ts",
     "update-deps": "npx --yes npm-check-updates --interactive"
   },
