@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "volta": {
+    "node": "20.5.1",
+    "pnpm": "8.7.0"
+  },
+  "scripts": {
+    "dev": "tsx watch ./src/index.ts",
+    "start": "tsx ./src/index.ts",
+    "update-deps": "npx --yes npm-check-updates --interactive"
+  },
+  "devDependencies": {
+    "@total-typescript/ts-reset": "^0.5.1",
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "^20.5.7",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "3.0.3",
+    "tsx": "^3.12.7"
+  }
+}

@@ -1,0 +1,5 @@
+# Read about how to disable automatic code review
+# https://eslint.org/docs/user-guide/configuring/ignoring-code
+
+# node.js dependencies
+node_modules

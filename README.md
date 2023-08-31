@@ -1,0 +1,1 @@
+# `bsky-shitpost-bot` 🤖
