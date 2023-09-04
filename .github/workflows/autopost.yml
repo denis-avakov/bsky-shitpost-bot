@@ -10,8 +10,8 @@ permissions:
   contents: read
 
 jobs:
-  build-and-test:
-    name: Build and Test
+  build-and-run:
+    name: Build and Run Bot 🤖
     timeout-minutes: 5
     runs-on: ubuntu-latest
 
