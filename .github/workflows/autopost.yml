@@ -1,8 +1,9 @@
 name: 'Post to Bluesky'
 
 on:
+  workflow_dispatch: # allow manual triggering
   schedule:
-    # cron job every 6 hours
+    # auto runs every 6 hours
     - cron: '0 */6 * * *'
 
 permissions:
