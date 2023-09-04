@@ -3,3 +3,6 @@
 
 # node.js dependencies
 node_modules
+
+# environment variables
+.env
