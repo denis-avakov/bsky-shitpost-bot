@@ -35,3 +35,6 @@ jobs:
 
       - name: Posting to Bluesky...
         run: pnpm start
+        env:
+          BSKY_NOCONTEXTSCATS_HANDLE: ${{ secrets.BSKY_NOCONTEXTSCATS_HANDLE }}
+          BSKY_NOCONTEXTSCATS_PASSWORD: ${{ secrets.BSKY_NOCONTEXTSCATS_PASSWORD }}
