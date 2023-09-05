@@ -210,6 +210,15 @@
           "alt": "A white cat sitting on a table"
         }
       ]
+    },
+    {
+      "message": "",
+      "images": [
+        {
+          "src": "./src/data/cats/9857.jpg",
+          "alt": "A person holding a cat"
+        }
+      ]
     }
   ],
   "dogs": [{}]
