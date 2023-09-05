@@ -1,4 +1,216 @@
 {
-  "cats": [{}],
+  "cats": [
+    {
+      "message": "",
+      "images": [
+        {
+          "src": "./src/data/cats/0595.png",
+          "alt": "A cat standing on a wood floor"
+        }
+      ]
+    },
+    {
+      "message": "",
+      "images": [
+        {
+          "src": "./src/data/cats/0666.jpg",
+          "alt": "A cat in a pocket of a person's shirt"
+        }
+      ]
+    },
+    {
+      "message": "",
+      "images": [
+        {
+          "src": "./src/data/cats/0730.jpg",
+          "alt": "A cat yawning with a toy cat on its back"
+        }
+      ]
+    },
+    {
+      "message": "",
+      "images": [
+        {
+          "src": "./src/data/cats/0904.jpg",
+          "alt": "A cat eating corn on the cob"
+        }
+      ]
+    },
+    {
+      "message": "",
+      "images": [
+        {
+          "src": "./src/data/cats/1043.jpg",
+          "alt": "A cat wrapped in a knitted scarf"
+        }
+      ]
+    },
+    {
+      "message": "",
+      "images": [
+        {
+          "src": "./src/data/cats/1240.jfif",
+          "alt": "A white cat lying on its back"
+        }
+      ]
+    },
+    {
+      "message": "",
+      "images": [
+        {
+          "src": "./src/data/cats/1299.jfif",
+          "alt": "A cat lying on a blanket"
+        }
+      ]
+    },
+    {
+      "message": "",
+      "images": [
+        {
+          "src": "./src/data/cats/1342.jpeg",
+          "alt": "A cat biting a stick"
+        }
+      ]
+    },
+    {
+      "message": "",
+      "images": [
+        {
+          "src": "./src/data/cats/1403.jpg",
+          "alt": "A cat lying on its back on the floor"
+        }
+      ]
+    },
+    {
+      "message": "",
+      "images": [
+        {
+          "src": "./src/data/cats/1642.jfif",
+          "alt": "A cat in a plastic bag with bottles"
+        },
+        {
+          "src": "./src/data/cats/4540.jfif",
+          "alt": "A cat in a plastic bag with bottles"
+        }
+      ]
+    },
+    {
+      "message": "",
+      "images": [
+        {
+          "src": "./src/data/cats/1673.jfif",
+          "alt": "A close up of a cat"
+        }
+      ]
+    },
+    {
+      "message": "",
+      "images": [
+        {
+          "src": "./src/data/cats/1706.jpg",
+          "alt": "A cat lying on a person's arm"
+        }
+      ]
+    },
+    {
+      "message": "",
+      "images": [
+        {
+          "src": "./src/data/cats/2375.png",
+          "alt": "A black cat with its mouth open"
+        }
+      ]
+    },
+    {
+      "message": "",
+      "images": [
+        {
+          "src": "./src/data/cats/2417.jpg",
+          "alt": "A cat lying on the floor with a glass of water"
+        }
+      ]
+    },
+    {
+      "message": "",
+      "images": [
+        {
+          "src": "./src/data/cats/2768.jpg",
+          "alt": "A close up of a cat"
+        }
+      ]
+    },
+    {
+      "message": "",
+      "images": [
+        {
+          "src": "./src/data/cats/3962.jfif",
+          "alt": "A cat sitting on the floor with a stuffed toy"
+        }
+      ]
+    },
+    {
+      "message": "",
+      "images": [
+        {
+          "src": "./src/data/cats/4124.jpeg",
+          "alt": "A white cat with black spots"
+        }
+      ]
+    },
+    {
+      "message": "",
+      "images": [
+        {
+          "src": "./src/data/cats/4503.jfif",
+          "alt": "A cat sitting on carpet"
+        }
+      ]
+    },
+    {
+      "message": "",
+      "images": [
+        {
+          "src": "./src/data/cats/5053.jpg",
+          "alt": "A close up of a cat's face"
+        }
+      ]
+    },
+    {
+      "message": "",
+      "images": [
+        {
+          "src": "./src/data/cats/5094.jpg",
+          "alt": "A black cat with yellow and black eyes"
+        }
+      ]
+    },
+    {
+      "message": "",
+      "images": [
+        {
+          "src": "./src/data/cats/5255.jpg",
+          "alt": "An orange cat sitting on a wood floor"
+        }
+      ]
+    },
+    {
+      "message": "",
+      "images": [
+        {
+          "src": "./src/data/cats/5597.jfif",
+          "alt": "A cat lying on a cat bed"
+        }
+      ]
+    },
+    {
+      "message": "",
+      "images": [
+        {
+          "src": "./src/data/cats/6195.png",
+          "alt": "A white cat sitting on a table"
+        }
+      ]
+    }
+  ],
   "dogs": [{}]
 }
