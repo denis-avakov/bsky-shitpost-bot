@@ -1,7 +1,10 @@
 import type { AtpAgentLoginOpts } from '@atproto/api';
+import type { PostItem } from '~/lib/types.js';
+
+import posts from '~/data/posts.json';
 
 type Account = AtpAgentLoginOpts & {
-  name: 'nocontextscats';
+  posts: PostItem[];
 };
 
 if (!process.env.BSKY_NOCONTEXTSCATS_HANDLE || !process.env.BSKY_NOCONTEXTSCATS_PASSWORD) {
@@ -10,8 +13,8 @@ if (!process.env.BSKY_NOCONTEXTSCATS_HANDLE || !process.env.BSKY_NOCONTEXTSCATS_
 
 export const accounts = [
   {
-    name: 'nocontextscats',
     identifier: process.env.BSKY_NOCONTEXTSCATS_HANDLE,
-    password: process.env.BSKY_NOCONTEXTSCATS_PASSWORD
+    password: process.env.BSKY_NOCONTEXTSCATS_PASSWORD,
+    posts: posts.cats
   }
 ] satisfies Account[];

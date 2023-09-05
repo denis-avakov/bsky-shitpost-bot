@@ -1,14 +1,12 @@
 import 'dotenv/config';
 
-import { accounts } from './lib/env.js';
-import { sources, getRandom } from '~/lib/data.js';
 import Bot from '~/lib/bot.js';
+import { accounts } from '~/lib/accounts.js';
+import { getRandom } from '~/lib/utils.js';
 
 const shitpostBot = new Bot();
 
 for (const account of accounts) {
-  const post = getRandom(sources[account.name]);
-  const result = await shitpostBot.run(post, account);
-
+  const result = await shitpostBot.run(getRandom(account.posts), account);
   console.log('Post successfully sent:', result);
 }

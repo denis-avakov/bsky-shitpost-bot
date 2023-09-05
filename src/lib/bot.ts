@@ -1,5 +1,5 @@
 import type { AtpAgentLoginOpts, AppBskyFeedPost, AppBskyEmbedImages } from '@atproto/api';
-import type { BotOptions, PostItem } from '~/utils/types.js';
+import type { BotOptions, PostItem } from '~/lib/types.js';
 
 import atproto from '@atproto/api';
 import sharp from 'sharp';
@@ -26,32 +26,32 @@ export default class Bot {
   async post(post: PostItem) {
     const payload: Partial<AppBskyFeedPost.Record> = {
       $type: 'app.bsky.feed.post',
-      text: ''
+      text: post?.message ?? ''
     };
 
-    if (post.text) {
-      const richText = new RichText({ text: post.text });
+    if (post.message) {
+      const richText = new RichText({ text: post.message });
       await richText.detectFacets(this.#agent);
 
       payload.text = richText.text;
       payload.facets = richText.facets;
     }
 
-    if (post.pathList) {
+    if (post.images) {
       const embed: AppBskyEmbedImages.Main = {
         $type: 'app.bsky.embed.images',
         images: []
       };
 
-      for (const imagePath of post.pathList) {
-        const imageBuffer = await sharp(imagePath).resize(400).toFormat('png').toBuffer();
+      for (const image of post.images) {
+        const imageBuffer = await sharp(image.src).resize(400).toFormat('png').toBuffer();
         const uploaded = await this.#agent.uploadBlob(imageBuffer, {
           encoding: 'image/png'
         });
 
         embed.images.push({
           image: uploaded.data.blob,
-          alt: ''
+          alt: image.alt ?? ''
         });
       }
 
