@@ -9,7 +9,7 @@ export type BotOptions = {
   dryRun?: boolean;
 };
 
-export type Post = {
+export type PostItem = {
   text?: string;
   pathList?: string[];
 };

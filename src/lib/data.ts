@@ -1,10 +1,10 @@
-import type { Post } from './types.js';
+import type { PostItem } from '~/utils/types.js';
 
 type DataSources = {
-  [key: string]: Post[];
+  [key: string]: PostItem[];
 };
 
-export function getRandom(posts: Post[]) {
+export function getRandom(posts: PostItem[]) {
   return posts[Math.floor(Math.random() * posts.length)];
 }
 

@@ -1,5 +1,5 @@
 import type { AtpAgentLoginOpts, AppBskyFeedPost, AppBskyEmbedImages } from '@atproto/api';
-import type { BotOptions, Post } from './types.js';
+import type { BotOptions, PostItem } from '~/utils/types.js';
 
 import atproto from '@atproto/api';
 import sharp from 'sharp';
@@ -23,7 +23,7 @@ export default class Bot {
     return this.#agent.login(loginOpts);
   }
 
-  async post(post: Post) {
+  async post(post: PostItem) {
     const payload: Partial<AppBskyFeedPost.Record> = {
       $type: 'app.bsky.feed.post',
       text: ''
@@ -61,7 +61,7 @@ export default class Bot {
     return this.#agent.post(payload);
   }
 
-  async run(post: Post, botOptions?: Partial<BotOptions>) {
+  async run(post: PostItem, botOptions?: Partial<BotOptions>) {
     const { identifier, password, dryRun } = {
       ...Bot.defaultOptions,
       ...botOptions
