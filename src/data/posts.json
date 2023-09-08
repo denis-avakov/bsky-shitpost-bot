@@ -280,6 +280,24 @@
           "alt": "A cat wearing glasses"
         }
       ]
+    },
+    {
+      "message": "this seat is taken",
+      "images": [
+        {
+          "src": "./src/data/cats/4865.png",
+          "alt": "A cat sitting in a theater chair"
+        }
+      ]
+    },
+    {
+      "message": "corner camping",
+      "images": [
+        {
+          "src": "./src/data/cats/4866.jfif",
+          "alt": "A cat sitting on a door"
+        }
+      ]
     }
   ],
   "dogs": [{}]
