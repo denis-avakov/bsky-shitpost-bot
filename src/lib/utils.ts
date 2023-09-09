@@ -1,5 +1,5 @@
-import type { PostItem } from '~/lib/types.js';
-import { redis } from '~/lib/upstash.js';
+import type { PostItem } from '~/lib/types.ts';
+import { redis } from '~/lib/upstash.ts';
 
 /**
  * Gets a random element from collection.

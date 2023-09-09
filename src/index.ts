@@ -1,8 +1,8 @@
 import 'dotenv/config';
 
-import Bot from '~/lib/bot.js';
-import { accounts } from '~/lib/accounts.js';
-import { getPost } from '~/lib/utils.js';
+import Bot from '~/lib/bot.ts';
+import { accounts } from '~/lib/accounts.ts';
+import { getPost } from '~/lib/utils.ts';
 
 const shitpostBot = new Bot();
 

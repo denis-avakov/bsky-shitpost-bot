@@ -1,5 +1,5 @@
 import type { AtpAgentLoginOpts, AppBskyFeedPost, AppBskyEmbedImages } from '@atproto/api';
-import type { BotOptions, PostItem } from '~/lib/types.js';
+import type { BotOptions, PostItem } from '~/lib/types.ts';
 
 import atproto from '@atproto/api';
 import sharp from 'sharp';
