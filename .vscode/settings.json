@@ -1,8 +1,14 @@
 {
-  "prettier.documentSelectors": ["**/*.astro"],
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Formatting and coding standards
   "editor.formatOnSave": true,
-  "[astro]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.documentSelectors": ["**/*.astro"],
+
+  // General file exclusions
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/pnpm-lock.yaml": true,
+    "**/.astro": true,
+    "**/env.d.ts": true
   }
 }
