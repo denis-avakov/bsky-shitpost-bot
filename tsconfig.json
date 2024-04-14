@@ -1,14 +1,7 @@
 {
-  "extends": "@tsconfig/node20/tsconfig.json",
+  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "verbatimModuleSyntax": true,
-    "moduleDetection": "force",
-    "moduleResolution": "NodeNext",
-    "module": "NodeNext",
-    "allowImportingTsExtensions": true,
-    "noEmit": true,
-    "paths": {
-      "~/*": ["./src/*"]
-    }
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   }
 }

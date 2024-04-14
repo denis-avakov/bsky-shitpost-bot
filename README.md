@@ -1,3 +1,19 @@
-# `bsky-shitpost-bot` 🤖
+# Keystatic in Astro
 
-<img src="https://raw.githubusercontent.com/denis-avakov/bsky-shitpost-bot/main/src/data/cats/9857.jpg" alt="A person holding a cat" />
+This template shows how you can use Keystatic in an Astro site.
+
+To setup:
+
+```bash
+npm install
+```
+
+To run:
+
+```
+npm run dev
+```
+
+Admin UI: [http://127.0.0.1:4321/keystatic](http://127.0.0.1:4321/keystatic)
+
+Homepage: [http://localhost:4321](http://localhost:4321)
