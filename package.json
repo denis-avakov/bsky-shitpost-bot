@@ -1,23 +1,30 @@
 {
-  "name": "@keystatic/templates-astro",
-  "version": "0.0.23",
-  "license": "MIT",
+  "name": "bsky-shitpost-bot",
+  "private": true,
+  "volta": {
+    "node": "20.12.2",
+    "pnpm": "8.15.6"
+  },
+  "scripts": {
+    "dev": "astro dev"
+  },
   "dependencies": {
     "@astrojs/markdoc": "^0.8.0",
     "@astrojs/react": "^3.0.7",
-    "@types/react": "^18.2.8",
-    "@types/react-dom": "^18.0.11",
+    "@keystatic/astro": "^5.0.0",
+    "@keystatic/core": "^0.5.11",
     "astro": "^4.0.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@keystatic/astro": "^5.0.0",
-    "@keystatic/core": "^0.5.11"
+    "react-dom": "^18.2.0"
   },
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+  "devDependencies": {
+    "@astrojs/tailwind": "5.1.0",
+    "@types/react": "^18.2.8",
+    "@types/react-dom": "^18.0.11",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0",
+    "prettier-plugin-tailwindcss": "^0.5.13",
+    "tailwindcss": "3.4.3",
+    "vite-plugin-mkcert": "^1.17.5"
   }
 }

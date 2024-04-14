@@ -1,8 +1,10 @@
-# Include your project-specific ignores in this file
-# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # node.js dependencies
 node_modules
+
+# astro build cache
+.astro
 
 # environment variables
 .env

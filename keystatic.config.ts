@@ -1,8 +1,11 @@
+// Read about how to use Keystatic configuration
+// https://keystatic.com/docs/configuration
+
 import { config, fields, collection } from '@keystatic/core';
 
 export default config({
   storage: {
-    kind: 'local',
+    kind: 'local'
   },
   collections: {
     posts: collection({
@@ -19,10 +22,10 @@ export default config({
           links: true,
           images: {
             directory: 'src/assets/images/posts',
-            publicPath: '../../assets/images/posts/',
-          },
-        }),
-      },
-    }),
-  },
+            publicPath: '../../assets/images/posts/'
+          }
+        })
+      }
+    })
+  }
 });
