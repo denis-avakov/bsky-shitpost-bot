@@ -1,3 +1,7 @@
+// Read about how to use ESLint configuration
+// https://ota-meshi.github.io/eslint-plugin-astro/user-guide
+// https://eslint.org/docs/latest/use/configure
+
 import eslintPluginAstro from 'eslint-plugin-astro';
 
 export default [
