@@ -3,7 +3,7 @@
   "private": true,
   "volta": {
     "node": "20.12.2",
-    "pnpm": "8.15.6"
+    "pnpm": "8.15.7"
   },
   "scripts": {
     "dev": "astro dev"
@@ -13,6 +13,8 @@
     "@astrojs/react": "^3.0.7",
     "@keystatic/astro": "^5.0.0",
     "@keystatic/core": "^0.5.11",
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-slot": "^1.0.2",
     "astro": "^4.0.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
