@@ -1,27 +1,23 @@
 ---
 import { getCollection } from 'astro:content';
+
 import Layout from '~/layouts/Layout.astro';
 
-const posts = await getCollection('posts');
+import { CategoryPreview } from '~/components/category-preview';
+
+const posts = await getCollection('nocontextscats');
+const searchParams = Astro.url.searchParams;
 ---
 
 <Layout title="Keystatic & Astro's Content Collections">
-  <div>
-    <h1>Keystatic ⚡️ + Astro 🚀</h1>
-    <p>This homepage shows how to load data from Astro's content collections.</p>
-    <p>
-      <a href="/keystatic">Click here to visit the Admin UI</a>, or the link below to view a post in
-      the collection.
-    </p>
-    <h2>Posts</h2>
-    <ul>
-      {
-        posts.map((post) => (
-          <li>
-            <a href={`/posts/${post.slug}`}>{post.data.title}</a>
-          </li>
-        ))
-      }
-    </ul>
-  </div>
+  <main class="my-10 w-full px-20">
+    <CategoryPreview
+      accountHandle="nocontextscats.bsky.social"
+      collectionId="nocontextscats"
+      posts={posts}
+      qsCreateNewPost={searchParams.get('create')}
+      qsPostEdit={searchParams.get('post')}
+      client:load
+    />
+  </main>
 </Layout>
