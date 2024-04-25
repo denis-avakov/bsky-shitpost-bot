@@ -24,6 +24,7 @@ module.exports = {
       }
     }
   ],
+  tailwindFunctions: ['clsx', 'cn', 'twmerge', 'cva'],
   importOrder: [
     '^(react/(.*)$)|^(react$)', // react core
     '^(astro/(.*)$)|^(astro$)', // astro core

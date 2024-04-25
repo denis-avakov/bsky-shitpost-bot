@@ -10,5 +10,10 @@
     "**/pnpm-lock.yaml": true,
     "**/.astro": true,
     "**/env.d.ts": true
-  }
+  },
+
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ]
 }
